@@ -1,0 +1,10 @@
+/* pages/BLETest/BLETest.wxss */
+.console{width:98%;box-sizing: border-box;border:1rpx #ddd solid;padding:10rpx 20rpx;position: absolute;top:10rpx;bottom:100rpx}
+.console scroll-view{height:100%}
+.console text{display:block;border-bottom:1rpx #ccc dashed;margin:0;padding:0;line-height:60rpx;font-size:28rpx;color:#999}
+.console text:last-child{border:none}
+
+.buttonBar{position: fixed;bottom:10rpx;width:100%;display: flex;justify-content: space-between;align-items: center;height:80rpx}
+.buttonBar button{height:80rpx;background:#4A90E2;color:#fff;font-size:28rpx;line-height:80rpx;border-radius:0;border:none;width:140rpx;margin:0 10rpx;}
+.buttonBar button.openlock{margin-right:0}
+.buttonBar text{font-size:24rpx;flex-grow:1;text-align:center;color:#999;background:#eee;height:80rpx;line-height:80rpx;}

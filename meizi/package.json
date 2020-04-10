@@ -1,0 +1,19 @@
+{
+  "name": "tuituilock",
+  "version": "4.0.1",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "vant-weapp": "^0.5.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.honorlee.me/TuiTuiGO/WechatApp.git"
+  },
+  "author": "HonorLee",
+  "license": "ISC"
+}

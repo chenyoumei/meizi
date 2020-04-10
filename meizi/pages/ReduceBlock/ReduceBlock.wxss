@@ -1,0 +1,15 @@
+/* pages/ReduceBlock/ReduceBlock.wxss */
+page{background:#eee}
+.intro{background:#fff;margin-bottom:20rpx;padding:30rpx;font-size:28rpx}
+.intro .bold{font-weight: bold;font-size:32rpx;margin-bottom:10rpx;}
+.intro .red{color:red;font-weight: bold;padding:0 10rpx;}
+.inputPhone{background:#fff;padding:30rpx;position:relative;margin-bottom:20rpx;}
+.inputPhone input{height:80rpx;font-size:36rpx;line-height:80rpx;font-family: 'Courier New', Courier, monospace;}
+.inputPhone button{width:80rpx;height:80rpx;border-radius:100rpx;position: absolute;right:30rpx;top:30rpx;color:#fff;background:#4A90E2;border:none;line-height:80rpx;text-align: center;padding:0;z-index:10}
+.inputPhone button icon{font-size:48rpx;}
+.inputPhone button[disabled],.control button[disabled]{background:#999 !important;border:none !important;color:#fff !important}
+
+.control{background:#fff;padding:0 0 30rpx;position:relative;}
+.control .controlCell{border:none;margin-bottom:20rpx}
+.control .controlCell .block{color:red}
+.control button{background: #4A90E2;color:#fff;margin:0 30rpx;}

@@ -1,0 +1,6 @@
+<!--components/header/header.wxml-->
+<view class="bgcolor {{colorType}}"></view>
+<view class="head">
+    <image src='/asset/img/big_logo.png' class="head_img" mode='widthFix'></image>
+    <image src='/asset/img/white_text.png' class="img_t_1" mode='widthFix'></image>
+</view>

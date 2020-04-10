@@ -1,0 +1,16 @@
+<!--bleunlock.wxml-->
+<view class="container">
+    <header colorType="blue"></header>
+    <view class="btns">
+        <form report-submit="true" bindsubmit="getFormId">
+            <button class="btn" bindtap='openBLELock' form-type="submit"><image src='/asset/img/btn_ble_open.png' class="control_btn btn_ble_open" mode="widthFix"></image></button>
+            <button bindtap='returnScan' class="btn btn_rescan" form-type="submit"><image src='/asset/img/btn_rescan.png' class="control_btn" mode="widthFix"></image></button>
+            <text>({{timeout}})</text>
+        </form>
+    </view>
+    <!-- <view class="help_btn">
+        <text class="help_btn_text">如何使用智能购物车 ?</text>
+    </view> -->
+    <userbar id="userbar"></userbar>
+</view>
+<van-dialog id="van-dialog" />

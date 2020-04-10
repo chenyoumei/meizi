@@ -1,0 +1,28 @@
+/* componet/userbar/userbar.wxss */
+@import '../../asset/iconfont.wxss';
+userbar{width:100%;position:fixed;bottom:20rpx;}
+.user_toolbar{
+    width:95%;padding:10rpx;box-sizing: border-box;height:80rpx;background:#f1f1f1;border-radius:20rpx;margin:0 auto;position: relative;z-index:10;
+}
+.user_toolbar button{display:flex;height:60rpx;margin:0 0;padding:0}
+.user_toolbar button,.user_toolbar button:hover,.user_toolbar button:after{border:none;background:none;-webkit-tap-highlight-color:none;outline:none;}
+.user_toolbar .score{display:block;position: absolute;width:130rpx;height:130rpx;top:-65rpx;left:0;right:0;margin:0 auto;background:#FF6C6C;color:#fff;font-size:32rpx;border-radius:100rpx;z-index:9;padding:20rpx 0;border:8rpx #fff solid}
+.user_toolbar .score:hover{background:#FF6C6C;border:8rpx #fff solid}
+.user_toolbar .score text{display:block;text-align: center;line-height:60rpx}
+.user_toolbar .score text:first-child{font-size:40rpx;line-height:50rpx;font-family:"Yuanti SC"}
+.user_toolbar .score text:last-child{font-size:22rpx;line-height:30rpx}
+
+button.user_info{display:inline-flex;}
+.userinfo-avatar {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+  display:inline-block;
+  overflow: hidden;
+}
+.userinfo-nickname {
+  color: #aaa;font-size:28rpx;line-height:60rpx;
+}
+button.history-link{font-size:28rpx;color:#999;display:inline-flex;align-items:center;line-height:50rpx;float:right}
+button.history-link icon{line-height:80rpx;}

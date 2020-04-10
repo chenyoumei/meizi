@@ -1,0 +1,46 @@
+/* pages/history/history.wxss */
+.user_toolbar{
+    padding:10rpx;box-sizing: border-box;height:80rpx;margin:0 auto;display:flex;justify-content:center
+}
+
+/* .user_toolbar button{padding:0;margin:0;} */
+.user_info{display:inline-flex;}
+.userinfo-avatar {
+  width: 56rpx;
+  height: 56rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+  display:inline-block;border:4rpx #fff solid;overflow: hidden;
+}
+.userinfo-nickname {
+  color: #666;font-size:42rpx;line-height:60rpx;
+}
+.user_score{text-align:center;color:#666;line-height:60rpx;font-size:26rpx;padding: 0;height:150rpx;display:flex;justify-content:space-around;align-items: center;flex-wrap:wrap;}
+.user_score view{width:33.33%;margin:0 auto;background:#f1f1f1;font-family:"Yuanti SC"}
+.user_score view:first-child{margin-bottom:20rpx;background:none;width:100%;}
+.user_score .score{color:#FF6C6C;font-size:48rpx;padding-right:20rpx}
+.user_score icon{color:#e2e225;font-size:32rpx;margin-right:10rpx}
+
+.borrowList{width:95%;position:absolute;top:250rpx;margin:0 auto;bottom:20rpx;left:0;right:0;}
+.borrow{width:100%;border-bottom:1px #eee dashed;padding:10rpx 20rpx 20rpx;font-size:26rpx;box-sizing: border-box;display:flex;justify-content:space-between;flex-wrap:wrap;color:#666;line-height:40rpx}
+.borrow:last-child{border:none}
+.borrow view{width:50%;height:70rpx;box-sizing: border-box;line-height:70rpx}
+.borrow .store icon{color:#999;font-size:28rpx;}
+.borrow .store icon:before{color:#FF6C6C;margin-right:10rpx}
+.borrow .serial{width:100%;text-align:center;background:#f1f1f1;border-radius:100rpx;height:40rpx;line-height:40rpx;margin-top:10rpx;font-size:24rpx;color:#999}
+
+.lasttime{padding-left:20rpx;}
+.lasttime text{font-size:48rpx;margin-left:20rpx}
+
+.borrowtime,.returntime{font-size:28rpx;text-align:center;padding:0;color:#999;}
+.borrowtime icon,.returntime icon{color:#999;}
+.borrowtime icon:before,.returntime icon:before{margin-right:10rpx;color:#FF6C6C}
+.returntime.instead icon:before{color:#4A90E2}
+/* .borrowtime text:first-child,.returntime text:first-child{font-size:28rpx;color:#666} */
+
+.unfinished .lasttime,.unfinished .returntime{color:#FF6C6C}
+.nodata{font-size:38rpx;color:#666;text-align:center;line-height:200rpx}
+
+@media all and (max-height: 680px) {  
+    body{}
+}

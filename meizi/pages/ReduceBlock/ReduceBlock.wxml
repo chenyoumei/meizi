@@ -1,0 +1,25 @@
+<!--pages/ReduceBlock/ReduceBlock.wxml-->
+<view class="intro">
+<view class="bold">受限说明</view>
+<view>用户超过<text class="red">3</text>次未主动还车,将会被限制使用车辆.</view>
+<view>需告知后果并减免一次或多次限制后则可继续使用.</view>
+</view>
+<view class="inputPhone">
+    <view class="inputs">
+        <input class="userPhone" placeholder="输入用户手机" type="number" maxlength="11" bindblur="checkNumber" bindconfirm="checkNumber"></input>
+        <button disabled="{{!phoneMatch}}" bindtap="checkUser"><icon class="iconfont icon-icon19"></icon></button>
+    </view>
+</view>
+<view hidden="{{!user}}" class="control">
+    <van-cell-group custom-class="controlCell">
+        <van-cell title="用户积分" value="{{user.score}}" value-class="value-class" />
+        <!-- <van-cell title="解锁次数" value="{{user.count_unlock}}" value-class="value-class" />
+        <van-cell title="还车次数" value="{{user.count_lock}}" value-class="value-class" />
+        <van-cell title="代还次数" value="{{user.count_help_lock}}" value-class="value-class" /> -->
+        <van-cell title="未还次数" value="{{user.count_unretore}}" value-class="value-class" />
+        <van-cell title="限制计数" value="{{user.count_unlock_block}}" value-class="value-class" />
+        <van-cell title="当前状态" value="{{user.block_status}}" value-class="{{user.isBlock?'block':''}}" />
+    </van-cell-group>
+    <button bindtap="reduceUser" disabled="{{!canReduce}}">减免限制计数</button>
+</view>
+<van-dialog id="van-dialog" />

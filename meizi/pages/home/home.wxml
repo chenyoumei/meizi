@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+    <header colorType="normal"></header>
+    <view class="btns">
+        <form report-submit="true" bindsubmit="getFormId">
+            <button class="btn" hidden='{{action!=0}}' open-type="getUserInfo" bindgetuserinfo="getUserInfo" form-type="submit"><image src='/asset/img/btn_right_info.png' class="control_btn btn_scan" mode="widthFix"></image></button>
+            <button class="btn" hidden='{{action!=1}}' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" form-type="submit"><image src='/asset/img/btn_right_phone.png' class="control_btn btn_scan" mode="widthFix"></image></button>
+            <button class="btn" hidden='{{action!=2}}' bindtap='startScanQR' form-type="submit"><image src='/asset/img/btn_scan.png' class="control_btn btn_scan" mode="widthFix"></image></button>
+            <button hidden='{{action!=2}}' bindtap='startInsteadScanQR' form-type="submit" class="insteadScan"><icon class="iconfont icon-QRcode" /> 车辆代还</button>
+        </form>
+    </view>
+    <!-- <view class="help_btn">
+        <text class="help_btn_text">如何使用智能购物车 ?</text>
+    </view> -->
+    <userbar id="userbar"></userbar>
+</view>
+<van-dialog id="van-dialog" />
+<van-popup show="{{ showPhoneRightAlert }}" bind:close="onAlertClose" custom-class="phoneRightAlert">
+    <text class="title">开锁账户获取授权声明</text>
+    <text class="content">小程序需以您的手机号码为凭据生成相应的开锁账户，点击“开通账户”按钮并同意授权后即可正常使用。</text>
+    <text class="content">由本小程序通过用户授权所并获取的相关资料信息，仅会用于本小程序配套智能购物车的开上锁功能及相关操作通知等功能。</text>
+    <text class="content last">智能购物车在开锁等过程中不会产生任何扣费项目，请放心使用。对您造成的不便敬请谅解！</text>
+    <button bindtap="confirmRightAlert">确定</button>
+</van-popup>
+<van-toast id="van-toast" />

@@ -1,0 +1,13 @@
+/**index.wxss**/
+.borrowTime{display:block;text-align: center;font-size:32rpx;background:#eee;color:#999;line-height:60rpx;border-radius:20rpx;width:360rpx;margin:40rpx auto 40rpx}
+
+.phoneRightAlert{border-radius:20rpx;overflow: hidden;padding:30rpx 50rpx 40rpx;width:80%;text-align:center}
+.phoneRightAlert text{display: block}
+.phoneRightAlert .title{font-size:32rpx;line-height:80rpx;width:100%;margin-bottom:20rpx;background:#eee;border-radius:100rpx}
+.phoneRightAlert .content{font-size:28rpx;display: block;text-indent:56rpx;text-align:left;line-height:48rpx;margin-bottom:10rpx}
+.phoneRightAlert .content.last{margin-bottom:30rpx}
+.phoneRightAlert button{border:none;border-radius:100rpx;height:80rpx;background:#FF6C6C;color:#fff;font-size:28rpx;line-height:80rpx}
+/* .user_toolbar button{padding:0;margin:0;} */
+
+.insteadScan{font-size:32rpx;background:#FF8534;border:none;color:#fff;border-radius:1000rpx;height:80rpx;line-height:80rpx;width:240rpx}
+.insteadScan::after{border:none}

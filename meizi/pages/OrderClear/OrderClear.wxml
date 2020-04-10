@@ -1,0 +1,32 @@
+<!--pages/ReduceBlock/ReduceBlock.wxml-->
+<view class="intro">
+<view class="bold">清除说明</view>
+<view>普通用户无法解锁超过<text class="red">1</text>辆购物车</view>
+<view>管理员等可解锁多辆的用户仅显示最后一次解锁记录</view>
+<view>清除后解锁记录会标记为非正常完结同时恢复解锁权限</view>
+<view>清除操作会被记录  <text class="red">请谨慎操作</text></view>
+</view>
+<view class="inputPhone">
+    <view class="inputs">
+        <input class="userPhone" placeholder="输入用户手机" type="number" maxlength="11" bindblur="checkNumber" bindconfirm="checkNumber"></input>
+        <button disabled="{{!phoneMatch}}" bindtap="checkUser"><icon class="iconfont icon-icon19"></icon></button>
+    </view>
+</view>
+<view hidden="{{!user}}">
+    <van-cell-group custom-class="controlCell">
+        <van-cell title="用户积分" value="{{user.score}}" value-class="value-class" />
+        <van-cell title="解锁次数" value="{{user.count_allunlock}}" value-class="value-class" />
+        <van-cell title="未还次数" value="{{user.count_unretore}}" value-class="value-class" />
+    </van-cell-group>
+</view>
+<view hidden="{{!order}}">
+    <van-cell-group custom-class="controlCell">
+        <van-cell title="在借车辆" value="{{order.serial}}" value-class="value-class" />
+        <van-cell title="解锁时间" value="{{order.unlock_time}}" value-class="value-class" />
+        <van-cell title="最后离开位置" value="{{order.leave_place}}" value-class="value-class" />
+        <van-cell title="最后离开时间" value="{{order.leave_time}}" value-class="value-class" />
+    </van-cell-group>
+</view>
+<view hidden="{{!noOrder}}" class="noOrder">无借车记录</view>
+<view hidden="{{!order}}" class="control"><button bindtap="clearOrder">清除记录</button></view>
+<van-dialog id="van-dialog" />
