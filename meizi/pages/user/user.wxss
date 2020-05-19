@@ -1,9 +1,0 @@
-/* pages/user/user.wxss */
-page{background:#eee;}
-.header{background:#fff;text-align: center;padding:50rpx 0 60rpx;color:#999;margin-bottom:40rpx}
-.header .head{width:160rpx;height:160rpx;margin:0rpx auto 10rpx;border-radius:100%;overflow: hidden}
-.header .name{margin-bottom:10rpx}
-.header text{font-size:24rpx;padding:10rpx;background:#eee;border-radius:200rpx;overflow: hidden;display:block;width:200rpx;height:30rpx;line-height:30rpx;margin:0 auto}
-.version{font-size:24rpx;position: fixed;bottom:0;line-height:40rpx;left:0;right:0;text-align: center;color:#ccc;background:#eee;height:120rpx;box-sizing: border-box;padding:20rpx 0}
-.version text{display:block}
-.controls{margin-bottom:120rpx}

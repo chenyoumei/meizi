@@ -1,4 +1,0 @@
-.btn_rescan{width:80rpx;height:80rpx;position:absolute;right:-40rpx;top:-40rpx;padding:0}
-.btn_rescan image{width:80rpx;height:80rpx;}
-/* .btns{position: relative}/ */
-.btns text{position: absolute;bottom:80rpx;left:0;right:0;text-align:center;width:100%;color:#fff;font-size:28rpx;}
